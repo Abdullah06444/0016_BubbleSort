@@ -30,7 +30,7 @@ namespace CSharp0016_BubbleSort
 
         static void bubbleSort(int[] a, int s, int i=0)
         {
-            for (int j = 0; j < s - 1; j++)
+            for (int j = 0; j < s-i-1; j++)
                 if (a[j + 1] < a[j])
                     swap(a, j);
 
