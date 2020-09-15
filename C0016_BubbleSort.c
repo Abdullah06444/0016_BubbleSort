@@ -8,11 +8,11 @@ void swap(int a[], int i)
 	a[i] = a[i + 1];
 	a[i + 1] = temp;
 }
-// time complexity bu siralamada n*n oluyor
+// time complexity bu siralamada log n oluyor
 void bubbleSort(int a[], int s, int i)
 {
 
-	for (int j = 0; j < s - 1; j++)
+	for (int j = 0; j < s-i-1; j++)
 		if (a[j + 1] < a[j])
 			swap(a, j);
 
